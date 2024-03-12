@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" />
-    
+    <link href="header.css" rel="stylesheet" />
     <title>Test</title>
   </head>
 
@@ -15,12 +15,25 @@
         <text class="blue-text">Net</text>
       </text>
       <menu class="header-menu">
-        <li class="blue-text">Бизнес</li>
-        <li>О нас</li>
-        <li>Цены</li>
-        <li>Оформить заказ</li>
+        <li><a class="menu__item blue-text" href="#">Бизнес</a></li>
+        <li><a class="menu__item" href="#">О нас</a></li>
+        <li><a class="menu__item" href="#">Цены</a></li>
+        <li><a class="menu__item" href="#">Оформить заказ</a></li>
       </menu>
     </header>
+
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+      <menu class="menu__box">
+        <li><a class="menu__item blue-text" href="#">Бизнес</a></li>
+        <li><a class="menu__item" href="#">О нас</a></li>
+        <li><a class="menu__item" href="#">Цены</a></li>
+        <li><a class="menu__item" href="#">Оформить заказ</a></li>
+      </menu>
+    </div>
 
     <main>
       <div class="cart">
@@ -37,8 +50,11 @@
           <li>Sed ut perspiciatis, unde omnis iste natus error</li>
         </ul>
 
-        <div>
-          <button class="cart-button" style="background-color: #3e9cdc; color: white">
+        <div class="buttons-cart">
+          <button
+            class="cart-button"
+            style="background-color: #3e9cdc; color: white"
+          >
             заказать
           </button>
           <button class="cart-button" style="background-color: #ffffff">
@@ -53,10 +69,10 @@
         оформление<text class="blue-text"> заказа</text>
         <p>Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
         <div class="lower-circles">
-            <!--первый-->
+          <!--первый-->
           <div class="circle-item">
             <div class="circle">
-                <img src="./assets/search.svg" alt="search"/>
+              <img src="./assets/search.svg" alt="search" />
             </div>
             <p>text</p>
           </div>
@@ -70,7 +86,7 @@
           <!--второй-->
           <div class="circle-item">
             <div class="circle">
-                <img src="./assets/%.svg" alt="%"/>
+              <img src="./assets/%.svg" alt="%" />
             </div>
             <p>text</p>
           </div>
@@ -84,7 +100,7 @@
           <!--третий-->
           <div class="circle-item">
             <div class="circle">
-                <img src="./assets/Subtract.svg" alt="subtract"/>
+              <img src="./assets/Subtract.svg" alt="subtract" />
             </div>
             <p>text</p>
           </div>
@@ -98,7 +114,7 @@
           <!--четвертый-->
           <div class="circle-item">
             <div class="circle">
-                <img src="./assets/save.svg" alt="save"/>
+              <img src="./assets/save.svg" alt="save" />
             </div>
             <p>text</p>
           </div>
@@ -112,60 +128,81 @@
           <!--пятый-->
           <div class="circle-item">
             <div class="circle">
-                <img src="./assets/many.svg" alt="many"/>
+              <img src="./assets/many.svg" alt="many" />
             </div>
             <p>text</p>
           </div>
         </div>
         <div class="inputs">
-            <select id="selector">
-                <option value="">Выберите тип системы</option>
-                <option value="value 1">value 1</option>
-                <option value="value 2">value 2</option>
-                <option value="value 3">value 3</option>
-                <option value="value 4">value 4</option>
-                <option value="value 5">value 5</option>
-                <option value="value 6">value 6</option>
-                <option value="value 7">value 7</option>
-            </select>
-            <input type="email" name="email" placeholder="Ваш e-mail"/>
-            <input type="text" name="name" placeholder="Вашу имя"/>
-            <div class="percent-div">
-                <div class="percent-text">
-                    <text>Sed ut perspiciatis, unde omnis iste natus</text>
-                    <label id="sliderValue">75 %</label>
-                </div>
-                <input type="range" name="percent" id="percentSlider" min="0" max="100" value="75"/>
+          <select id="selector">
+            <option value="">Выберите тип системы</option>
+            <option value="value 1">value 1</option>
+            <option value="value 2">value 2</option>
+            <option value="value 3">value 3</option>
+            <option value="value 4">value 4</option>
+            <option value="value 5">value 5</option>
+            <option value="value 6">value 6</option>
+            <option value="value 7">value 7</option>
+          </select>
+          <input type="email" name="email" placeholder="Ваш e-mail" />
+          <input type="text" name="name" placeholder="Вашу имя" />
+          <div class="percent-div">
+            <div class="percent-text">
+              <text>Sed ut perspiciatis, unde omnis iste natus</text>
+              <label id="sliderValue">75 %</label>
             </div>
-            
-            <div class="input__wrapper">
-                <input name="file" type="file" id="file" class="input file" multiple>
-                <label for="file" class="file-button">
-                   <img class="file-icon" src="./assets/file.svg" alt="Прикрепить файл" width="15">
-                   <span class="file-button-text">Прикрепить файл</span>
-                </label>
-             </div>
+            <input
+              type="range"
+              name="percent"
+              id="percentSlider"
+              min="0"
+              max="100"
+              value="75"
+            />
+          </div>
+
+          <div class="input__wrapper">
+            <input
+              name="file"
+              type="file"
+              id="file"
+              class="input file"
+              multiple
+            />
+            <label for="file" class="file-button">
+              <img
+                class="file-icon"
+                src="./assets/file.svg"
+                alt="Прикрепить файл"
+                width="15"
+              />
+              <span class="file-button-text">Прикрепить файл</span>
+            </label>
+          </div>
         </div>
       </div>
       <button type="submit" class="submit">Отправить</button>
     </form>
 
     <footer>
-        <text>
-            © 2018 «LoremIpsum.net» Все права защищены.
-        </text>
-        <menu class="footer-menu">
-            <li><img src="./assets/qivi.svg" alt="#"/>Qiwi wallet</li>
-            <li><img src="./assets/yandex.svg" alt="#"/>Yandex Money</li>
-            <li><img src="./assets/webm.svg"  alt="#"/>Web Money</li>
-        </menu>
-        <menu class="footer-links">
-            <li><a href="#"><img src="./assets/message.svg" alt="#"/>info@ipsum228.com</a></li>
-            <li><a href="#"><img src="./assets/vk.svg" alt="#"/>Мы вконтакте</a></li>
-        </menu>
+      <text> © 2018 «LoremIpsum.net» Все права защищены. </text>
+      <menu class="footer-menu">
+        <li><img src="./assets/qivi.svg" alt="#" />Qiwi wallet</li>
+        <li><img src="./assets/yandex.svg" alt="#" />Yandex Money</li>
+        <li><img src="./assets/webm.svg" alt="#" />Web Money</li>
+      </menu>
+      <menu class="footer-links">
+        <li>
+          <a href="#"
+            ><img src="./assets/message.svg" alt="#" />info@ipsum228.com</a
+          >
+        </li>
+        <li>
+          <a href="#"><img src="./assets/vk.svg" alt="#" />Мы вконтакте</a>
+        </li>
+      </menu>
     </footer>
 
-
-    <script src="./assets/script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
