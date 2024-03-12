@@ -12,25 +12,26 @@ main {
   background-size: cover;
   height: 100%;
   width: 100%;
-  padding: 15vw 0 10vw 15vw;
+  padding: 10vw 0 10vw 12.5vw;
   box-sizing: border-box;
 }
 .cart {
-  width: 50%;
+  width: 60%;
 }
 .cart text {
-  font-size: 30px;
+  font-size: 35px;
   text-transform: uppercase;
   font-weight: 600;
 }
 .cart p {
   word-wrap: break-word;
   font-weight: 700;
+  margin-block-start: 2em;
   margin-block-end: 0em;
 }
 .cart ul {
   margin-block-start: 0.5em;
-  padding-inline-start: 20px;
+  padding-inline-start: 25px;
 }
 .cart li {
   word-wrap: break-word;
@@ -39,14 +40,14 @@ main {
 }
 
 .cart-button {
-  box-sizing: border-box;
+  margin-top: 4vw;
   cursor: pointer;
   text-transform: uppercase;
   border: 1px solid #6f6d7b;
   margin-right: 10px;
   border-radius: 4px;
-  width: 20vw;
-  height: 4vw;
+  width: 12vw;
+  height: 2.5vw;
   font-size: 12px;
   transition: filter 0.3s ease;
 }
@@ -61,7 +62,7 @@ main {
 }
 .lower-cart {
   width: 70%;
-  margin: 2vw auto;
+  margin: 2vw auto 4vw auto;
   font-size: 25px;
   font-weight: 700;
   color: #ffffff;
@@ -85,8 +86,8 @@ main {
   align-items: center;
 }
 .circle {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,15 +99,15 @@ main {
   width: 25px;
 }
 .groupe-point {
-  margin: -5vw 1vw 0 1vw;
+  margin: -4vw 0.5vw 0 0.5vw;
   display: flex;
   flex-direction: row;
   width: 5vw;
   justify-content: space-between;
 }
 .point {
-  width: 3px;
-  height: 3px;
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
   background-color: #c4c4c4;
 }
@@ -200,15 +201,15 @@ input[type="range"]::-webkit-slider-thumb {
   filter: brightness(0.6);
 }
 .submit {
-  padding: 10px 60px;
+  padding: 10px 100px;
   background-color: #3e9cdc;
   color: #ffffff;
+  border: 1px solid white;
   border-radius: 2px;
   cursor: pointer;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 15px;
-  border: none;
   transition: filter 0.3s ease;
 }
 .submit:hover {
@@ -223,6 +224,10 @@ footer {
   font-size: 13px;
   text-align: center;
   color: #ffffff;
+}
+footer>*{
+  margin-left: -6vw;
+  opacity: 0.5;
 }
 footer menu {
   font-size: 10px;
@@ -252,6 +257,10 @@ footer menu img {
 @media (max-width: 1024px) {
   .cart {
     width: 70%;
+  }
+  .cart-button{
+    width: 15vw;
+    height: 3vw;
   }
 }
 /**/
@@ -297,6 +306,14 @@ footer menu img {
     grid-gap: 5px;
     row-gap: 30px;
   }
+  .file-button {
+    width: 70%;
+  }
+  .file-button-text {
+    color: black;
+    font-size: 15px;
+    margin-left: 0px;
+  }
 
   footer {
     display: flex;
@@ -340,9 +357,14 @@ footer menu img {
     width: 100%;
     justify-content: space-around;
   }
+  .circle {
+    width: 60px;
+    height: 60px;
+  }
   .circle-item {
     width: auto;
   }
+  
   .cart-button {
     width: 35vw;
     height: 8vw;
