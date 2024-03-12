@@ -1,3 +1,6 @@
+html{
+  font-family: Arial, Helvetica, sans-serif;
+}
 body {
   margin: 0;
 }
@@ -321,6 +324,9 @@ footer menu img {
     height: 20vw;
     justify-content: space-between;
   }
+  footer>*{
+    margin-left: 0;
+  }
 }
 
 /**/
@@ -414,6 +420,9 @@ footer menu img {
     flex-direction: column;
     height: 20vw;
     justify-content: space-between;
+  }
+  footer>*{
+    margin-left: 0;
   }
 }
 /**/
