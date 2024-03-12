@@ -358,6 +358,12 @@ footer menu img {
 
 /*размеры телефонов*/
 @media (max-width: 481px) {
+  #scrollBtn{
+  right: 2vw;
+  bottom: 30vw;
+  width: 40px;
+  height: 40px;
+  }
   main {
     padding: 25vw 5vw 5vw 5vw;
   }
