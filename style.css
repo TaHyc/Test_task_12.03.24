@@ -129,6 +129,9 @@ main {
   flex-direction: row;
   justify-content: space-between;
 }
+option:checked {
+  color: #42A9ED;
+}
 select option {
   background: #272733e5;
   color: #ffffff;
