@@ -156,7 +156,6 @@ input[type="range"]::-webkit-slider-thumb {
   cursor: pointer;
 }
 .input__wrapper {
-  position: relative;
   text-align: center;
   display: inline-block;
 }
@@ -269,7 +268,13 @@ footer menu img {
     width: 100%;
     margin-bottom: 7vw;
   }
+  .lower-cart p{
+    width: 90%;
+    margin: auto;
+  }
   .lower-circles {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
     width: 100%;
     justify-content: space-around;
   }
@@ -325,11 +330,94 @@ footer menu img {
 /**/
 
 /*размеры планшетов*/
-@media (min-width: 769px) {
+@media (max-width: 769px) {
+  main {
+    padding: 25vw 5vw 5vw 5vw;
+  }
+  .cart {
+    width: 100%;
+  }
+  .cart text {
+    font-size: 25px;
+  }
+  .cart ul {
+    padding-inline-start: 15px;
+  }
+  .buttons-cart {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .groupe-point {
+    display: none;
+  }
+  .lower-cart {
+    width: 100%;
+    margin-bottom: 7vw;
+  }
+  .lower-cart p{
+    width: 90%;
+    margin: auto;
+  }
+  .lower-circles {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .circle-item {
+    width: auto;
+  }
+  .inputs {
+    margin-top: 2vw;
+    grid-gap: 0px;
+    row-gap: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .inputs input,
+  select {
+    width: 70%;
+    margin: auto;
+  }
+  .percent-div {
+    width: 90%;
+    margin: auto;
+  }
+  .percent-text {
+    flex-direction: column;
+    font-size: 20px;
+    margin-bottom: 3vw;
+  }
+  input[type="range"] {
+    height: 10px;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 3px solid #286690;
+    height: 25px;
+    width: 25px;
+  }
+  .file-button {
+    width: 70%;
+    margin: auto;
+  }
+  .file-button-text {
+    color: black;
+    font-size: 15px;
+    margin-left: 5px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 20vw;
+    justify-content: space-between;
+  }
 }
+
 /**/
 
 /*размеры компьютеров*/
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
 }
 /**/

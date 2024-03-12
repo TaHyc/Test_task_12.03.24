@@ -118,7 +118,7 @@ menu {
 .menu__item {
   transition-duration: 0.25s;
 }
-@media (max-width: 481px) {
+@media (max-width: 550px) {
   .menu__btn {
     display: flex; /* используем flex для центрирования содержимого */
     align-items: center; /* центрируем содержимое кнопки */
@@ -139,16 +139,26 @@ menu {
   }
   .menu__box {
     text-align: left;
-    padding: 20vw 10vw
+    padding: 20vw 10vw;
   }
 }
 /**/
 
 /*размеры планшетов*/
-@media (min-width: 769px) {
+@media (max-width: 720px) {
+  header {
+    padding: 20px 0 20px 0;
+  }
+  .header-menu {
+    width: 50%;
+  }
 }
 /**/
+/*размеры ноутбуков*/
+@media (max-width: 1024px) {
 
-/*размеры компьютеров*/
-@media (min-width: 1024px) {
+  .header-menu {
+    width: 50%;
+  }
 }
+/**/
